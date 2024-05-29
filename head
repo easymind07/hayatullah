@@ -1,0 +1,177 @@
+
+
+
+
+
+<div class="container">
+
+
+  <div class="content_one">
+
+      <div class="content_one_sub">
+
+          <div class="content_one_subber">
+
+              <header>
+                  <h1 class="left"><a href="#">FX-Tech-Global</a></h1>
+                  <div class="slider">
+                      <nav class="sidenav" id="mySidenav">
+                          <i class="fa fa-times" onclick="closeNav()"></i>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Information</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+
+                      </nav>
+                  </div>
+                  <i class="fa fa-bars" onclick="openNav()" id="bars"></i>
+              </header>
+
+
+
+
+
+
+
+
+csssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+.content_one_sub header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.content_one_sub header h1 a {
+    text-decoration: none;
+    color: var(--primary_color);
+    font-size: 1em;
+}
+
+header .sidenav {}
+
+header .sidenav {
+    justify-content: center;
+    align-items: center;
+}
+
+header .sidenav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header .sidenav li a {
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 540;
+    padding: 0px 20px;
+}
+
+ .contact {
+    padding: 10px 20px;
+    background: linear-gradient(to right,rgb(5, 5, 50),rgb(55, 70, 114));
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+.contact a {
+    color: white;
+
+}
+
+header .sidenav .fa-times {
+    color: var(--white_color);
+    font-size: 1.8em;
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 1.8em;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+              mediaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+        
+    header .fa-bars {
+        display: block;
+    }
+
+    header .sidenav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100vh;
+        background-color: var(--primary_color);
+        transition: 0.5s;
+    }
+
+    header .sidenav.slide {
+        width: 100%;
+    }
+
+    header .sidenav ul {
+        display: block;
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    header .sidenav li {
+        margin: 30px 0;
+    }
+
+    header .sidenav li a {
+        color: var(--white_color);
+        padding: 10px 20px;
+        opacity: 0;
+        transition-delay: 0.5s;
+        transition: transform 5s ease-in-out , opacity 5s;
+    }
+
+    header .sidenav.slide li a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    header .sidenav.slide .fa-times {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+
+
+
+
+
+              var mean = document.getElementById("mySidenav");
+var close = document.getElementById("close");
+
+function openNav() {
+    mean.classList.add("slide");
+};
+
+function closeNav() {
+    mean.classList.remove("slide");
+};

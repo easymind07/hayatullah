@@ -1,0 +1,77 @@
+
+// Navbar Header Scroller Section //
+let header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  header.classList.toggle("shadow", window.scrollY > 0);
+});
+
+let menuBtnIcon = document.querySelector(".menu-Btn");
+window.addEventListener("scroll", () => {
+  menuBtnIcon.classList.toggle("shadow", window.scrollY > 0);
+});
+
+let headerBrand = document.querySelector(".brand");
+window.addEventListener("scroll", () => {
+  headerBrand.classList.toggle("shadow", window.scrollY > 0);
+});
+
+
+
+
+
+
+
+//-------------- Navbar Header Scroller Section //
+
+window.addEventListener(('scroll'), () => {
+  var header = document.getElementById('scroller');
+
+  if (window.scrollY > 0) {
+    header.classList.add("roll");
+    console.log("fuck");
+  }
+  else {
+    header.classList.remove("roll");
+  }
+})
+
+
+
+
+
+
+//--------CSS-----//
+
+
+.content_one_sub header.roll {
+  background-color: darkblue;
+}
+
+
+
+.arrow_up {
+  position: fixed;
+  right: 0.7rem;
+  bottom: 15%;
+  transition: all 2s;
+  z-index: 1;
+  display: none;
+}
+
+.arrow_up a {
+  text-decoration: none;
+  color: var(--primary_color);
+  font-size: 1em;
+  background-color: darkblue;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.arrow_up.show {
+  display: block;
+}
+
+
+<div class="arrow_up move" id="arrow_up">
+<a href="#" target="content_one">&uarr;</a>
+</div>

@@ -1,0 +1,16 @@
+
+.content_one_sub header nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary_color);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.content_one_sub header nav ul li a:hover:after {
+  width: 100%;
+}
